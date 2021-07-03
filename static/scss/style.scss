@@ -130,9 +130,36 @@ section {
 
 .features-section {
   width: 100%;
-  background: #20272E;
+  background: #20272e;
   color: white;
-  height: 50vh;
+}
+
+.features-section .container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+
+  .left-col {
+    margin: 3em 3em 0 5em;
+
+    .subhead {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: gray;
+      letter-spacing: 0.3em;
+    }
+
+    h1 {
+      padding: 10px 0;
+      font-size: 4.5rem;
+      width: 90%;
+    }
+  }
+}
+
+.feature-img {
+  width: 30%;
+  margin-right: 8em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -218,12 +245,43 @@ section {
     }
   }
 
+  .features-section .container {
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left-col {
+    h1 {
+      font-size: 3.5rem !important;
+      line-height: 1.3em;
+      margin-top: 0.2em;
+    }
+
+    .primary-cta {
+      margin-right: 1em;
+    }
+
+    .watch-video-cta {
+      display: block;
+      margin-top: 1em;
+
+      img {
+        margin-right: 0.5em;
+      }
+    }
+  }
+
   .hero-img {
     width: 70%;
     max-width: 500px;
     height: 350px;
     margin-top: 1.5rem;
     margin-left: 40px;
+  }
+
+  .feature-img {
+    display: none;
   }
 }
 
