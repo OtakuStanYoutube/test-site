@@ -124,7 +124,8 @@ section {
 
 .features-section {
   width: 100%;
-  background-color: #ffffff;
+  background: #20272E;
+  color: white;
   height: 50vh;
 }
 
